@@ -8,6 +8,7 @@ from langchain.chains.natbot.base import NatBotChain
 from langchain.llms.base import LLM
 
 
+# TODO: replace this with langchain/llms/fake_llm.py.
 class FakeLLM(LLM, BaseModel):
     """Fake LLM wrapper for testing purposes."""
 

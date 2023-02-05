@@ -10,6 +10,7 @@ class FakeLLM(LLM, BaseModel):
     """Fake LLM wrapper for testing purposes."""
 
     queries: Optional[Mapping] = None
+    n: int = 1
 
     @property
     def _llm_type(self) -> str:
