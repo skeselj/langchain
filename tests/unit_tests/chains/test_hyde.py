@@ -11,6 +11,7 @@ from langchain.llms.base import BaseLLM
 from langchain.llms.fake_llm import FakeLLM
 from langchain.schema import Generation, LLMResult
 
+
 class FakeEmbeddings(Embeddings):
     """Fake embedding class for tests."""
 
