@@ -21,7 +21,7 @@ class FakeLLM(LLM, BaseModel):
         """First try to lookup in queries, else return 'foo' or 'bar'."""
         if self.queries is not None:
             return self.queries[prompt]
-        if stop is None:
+        if stop is None or len(prompt) > 10000:
             return "foo"
         else:
             return "bar"
